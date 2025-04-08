@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#2d89ef" />
+    <link rel="icon" href="icon-192.png" />    
+</head>
+<body>
+  <div class="listas-container">
+    <h1>Minhas Listas do Dia a Dia 📝</h1>
+
+    <section class="lista" id="tarefas">
+      <h2>✔️ Tarefas de Hoje</h2>
+      <ul class="lista-itens"></ul>
+      <div class="input-area">
+        <input type="text" placeholder="Nova tarefa" />
+        <button>Adicionar</button>
+      </div>
+    </section>
+
+    <section class="lista" id="compras">
+      <h2>🛒 Lista de Compras</h2>
+      <ul class="lista-itens"></ul>
+      <div class="input-area">
+        <input type="text" placeholder="Novo item" />
+        <button>Adicionar</button>
+      </div>
+    </section>
+
+    <section class="lista" id="metas">
+      <h2>🎯 Metas do Mês</h2>
+      <ul class="lista-itens"></ul>
+      <div class="input-area">
+        <input type="text" placeholder="Nova meta" />
+        <button>Adicionar</button>
+      </div>
+    </section>
+
+    <section class="lista" id="ideias">
+      <h2>💡 Ideias & Inspirações</h2>
+      <ul class="lista-itens"></ul>
+      <div class="input-area">
+        <input type="text" placeholder="Nova ideia" />
+        <button>Adicionar</button>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js").then(() => {
+        console.log("Service Worker registrado com sucesso");
+      });
+    }
+  </script>
+    
+  <script src="listas.js"></script>
+</body>
+</html>

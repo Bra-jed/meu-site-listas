@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Painel de Controle</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="dashboard-container">
+    <header>
+        <h1>Bem-vindo ao Painel</h1>
+        <nav>
+          <a href="listas.html">Início</a>
+          <a href="#" id="logoutButton">Sair</a>
+          <select id="themeSelector" title="Escolha o tema">
+            <option value="default">Padrão</option>
+            <option value="dark">Escuro</option>
+            <option value="pastel">Pastel</option>
+          </select>
+        </nav>
+      </header>          
+
+    <section class="content">
+      <h2>Informações do Usuário</h2>
+      <p id="welcomeMessage">Bem-vindo, usuário!</p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Dados</h3>
+          <p>Visualize seus dados pessoais e relatórios.</p>
+        </div>
+        <div class="card">
+          <h3>Configurações</h3>
+          <p>Alterar configurações da conta e preferências.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

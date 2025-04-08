@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f5fa;
+    color: #333;
+  }
+  
+  .listas-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 30px;
+  }
+  
+  .lista {
+    margin-bottom: 40px;
+  }
+  
+  .lista h2 {
+    color: #2d89ef;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .lista-itens {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .lista-itens li {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    background-color: #f0f4ff;
+    margin-bottom: 8px;
+    border-left: 4px solid #2d89ef;
+    border-radius: 4px;
+    justify-content: space-between;
+  }
+  
+  .lista-itens li input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .lista-itens li span {
+    flex-grow: 1;
+    margin-left: 10px;
+  }
+  
+  .lista-itens li.completed span {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  .lista-itens button {
+    background: none;
+    border: none;
+    color: #d55;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .input-area {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .input-area input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+  }
+  
+  .input-area button {
+    padding: 10px 15px;
+    background-color: #2d89ef;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
