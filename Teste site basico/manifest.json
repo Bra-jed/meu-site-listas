@@ -1,7 +1,7 @@
 {
     "name": "Minhas Listas",
     "short_name": "Listas",
-    "start_url": "listas.html",
+    "start_url": "index.html",
     "display": "standalone",
     "background_color": "#f5f5fa",
     "theme_color": "#2d89ef",
