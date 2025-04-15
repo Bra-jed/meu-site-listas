@@ -1,0 +1,48 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minhas Listas</title>
+  <link rel="stylesheet" href="listas.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2d89ef">
+  <link rel="icon" href="icon-192.png">
+</head>
+<body>
+  <div class="container">
+    <h1>Minhas Listas</h1>
+
+    <section class="lista" id="tarefas">
+      <h2>Tarefas</h2>
+      <input type="text" placeholder="Nova tarefa">
+      <button>Adicionar</button>
+      <ul></ul>
+    </section>
+
+    <section class="lista" id="compras">
+      <h2>Compras</h2>
+      <input type="text" placeholder="Novo item">
+      <button>Adicionar</button>
+      <ul></ul>
+    </section>
+
+    <section class="lista" id="objetivos">
+      <h2>Objetivos</h2>
+      <input type="text" placeholder="Novo objetivo">
+      <button>Adicionar</button>
+      <ul></ul>
+    </section>
+  </div>
+
+  <script src="listas.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js")
+        .then(() => console.log("Service Worker registrado com sucesso"))
+        .catch(err => console.error("Erro ao registrar Service Worker:", err));
+    }
+  </script>
+</body>
+</html>
